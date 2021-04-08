@@ -485,7 +485,6 @@ div.footer h6 {
         color: #bcc3c7;
         cursor: pointer;
         font-size: 1.5rem;
-        margin-right: 0.6rem;
         padding: 0.2rem 0.4rem;
         
     }
@@ -498,7 +497,7 @@ div.footer h6 {
     .navLinks {
         display: flex;
         flex-direction: column;
-        background-color: #bcc3c7;
+        background-color: #122631;
         text-align: center;
         transition: ease-out 0.5s;
         position: fixed;
@@ -506,7 +505,9 @@ div.footer h6 {
         left: 0;
         right: 0;
         z-index: 2;
-        margin-top: 8.7vh;
+        margin-top: 8.3vh;
+        padding-top: 5vh;
+        height: calc(100% - 8.3vh);
     }
 
     .show-navLinks {
@@ -522,14 +523,19 @@ div.footer h6 {
         width: 100%;
         padding: 0.5rem 0.25rem;
         text-decoration: none;
-        color: #4c5a63;
-        border-bottom: 1px solid rgb(180, 175, 175);
+        color: #c2c4c6;
         transition: ease-in-out 0.3s;
+        font-size: 1.1rem;
+        border-bottom: rgb(65, 63, 63) 1px solid;
+    }
+
+    .navLinks li:first-child a {
+        border-top: rgb(65, 63, 63) 1px solid;
     }
 
     .navLinks li a:hover {
-        color: #304353;
-        background: #fff;
+        color: #21303b;
+        background: rgb(158, 156, 156);
         padding: 0.75rem;
     }
 
@@ -538,11 +544,20 @@ div.footer h6 {
     }
 
     div.hero-background {
-        padding: 5rem 6.5rem;
+        padding: 10rem 6.5rem 5rem 6.5rem;
     }
 
     div.hero-background-pos {
-        display: none;
+        position: absolute;
+        top: 73%;
+        right: 0px;
+        left: 35%;
+        background: #fff;
+        width: 140px;
+        height: 140px;
+        z-index: 1;
+        border-radius: 50%;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     }
     
     div.snapshot-team {
@@ -555,7 +570,7 @@ div.footer h6 {
     }
 
     div.box1, div.box3 {
-        width: 250px;
+        width: 220px;
         margin: 10px;
     }
 }
