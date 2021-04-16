@@ -1,0 +1,225 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    height: 2.5rem;
+    margin-top: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.85rem;
+}
+
+nav * {
+    margin: 0 0.25rem;
+}
+
+nav .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.3rem;
+}
+
+nav button {
+    font-family: 'Roboto', sans-serif;
+    width: 6rem;
+    height: 2.3rem;
+    border: none;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+nav button:hover {
+    background-color: rgba(26,115,232,0.9);
+    box-shadow: 0px 1px 1px rgba(26,115,232,0.7);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 2.5rem auto;
+}
+
+.main form, .main .offers {
+    width: 100%;
+}
+
+.search {
+    width: 95%;
+    margin: 2%;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: auto;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+}
+
+.search:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.search-icon, .search-voice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search i {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.search input {
+    border: transparent;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.main .buttons {
+    text-align: center;
+}
+
+.main .buttons * {
+    margin: 1.25rem 0.75rem;
+}
+
+.main .buttons button {
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    border: transparent;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(249, 249, 249);
+}
+
+.main .buttons button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+}
+
+.main .buttons button:focus {
+    border: 1px solid deepskyblue;
+    border-radius: 0.25rem;
+}
+
+.offers p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.offers p a {
+    color: blue;
+    margin: 0 0.125rem;
+}
+
+
+footer {
+    background-color: rgba(167, 161, 161, 0.1);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: gray;
+}
+
+footer .footer-top {
+    padding: 1.25rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 1rem;
+    height: auto;
+}
+
+footer .footer-bottom .about-II {
+    display: none;
+}
+
+footer .footer-bottom .center i {
+    color: rgb(33, 160, 88);
+}
+
+footer .footer-bottom .about *, .end * {
+    margin: 0 0.25rem;
+}
+
+
+@media (max-width:375px) {
+    
+    body {
+        margin: 0 2%;
+    }
+    header {
+        margin-bottom: 10vh;
+    }
+
+    .main .buttons {
+        display: none;
+    }
+
+    .offers p {
+        display: flex;
+        flex-direction: column;
+        line-height: 28px;
+    }
+
+    .offers p a {
+        margin: 0 0.3rem;
+    }
+
+    footer .footer-top, .footer-bottom {
+        padding: 0.75rem;
+    }
+
+    footer .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    footer .footer-bottom .about {
+        display: none;
+    }
+
+    footer .footer-bottom .about-II {
+        display: block;
+        margin: 0.5rem auto;
+    }
+
+    footer .footer-bottom .about-II a {
+        margin: 0 0.5rem
+    }
+
+    footer .center {
+        display: none;
+    }
+}

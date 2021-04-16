@@ -548,6 +548,7 @@ div.footer h6 {
     }
 
     div.hero-background-pos {
+        display: none;
         position: absolute;
         top: 73%;
         right: 0px;

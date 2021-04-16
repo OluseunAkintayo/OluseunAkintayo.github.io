@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Titillium+Web&display=swap');
+
+body {
+  margin: 0;
+  padding: 2rem 0;
+  font-family: 'Oxygen', sans-serif;
+}
+
+div.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  background-color: whitesmoke;
+}
+
+div.wrapper h2 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Oxygen', sans-serif;
+  margin-top: 2rem;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 1%;
+}
+
+/* begin account */
+
+form h4 + div div.input-box, form h4 + div + div div.input-box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0.75rem 0;
+    padding: 0;
+    height: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+}
+
+form h4 + div div.input-box i, form h4 + div + div div.input-box i {
+    background: rgb(212, 216, 216);
+    width: 8%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+form h4 + div div.input-box input, form h4 + div + div div.input-box input {
+    height: 88%;
+    width: 92%;
+    padding: 0 0.5rem;
+    background: inherit;
+    border: none;
+    outline: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    font-family: 'Oxygen', sans-serif;
+}
+/* end of account */
+
+
+/* begin DOB */
+form h4 + div + div + div > div input[type=text] {
+    background: inherit;
+    width: 24%;
+    margin: 0;
+    height: 1.5rem;
+    padding: 0 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    outline: none;
+    font-family: 'Oxygen', sans-serif;
+}
+
+form h4 + div + div + div > div input[type=text]:focus {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.25rem;
+}
+/* end of DOB */
+
+/* beginning of gender */
+form h4 + div + div + div div + div {
+    font-family: 'Oxygen', sans-serif;  
+}
+/* end of gender */
+
+/* beginning of payment details */
+form h4 + div + div + div + div > div.input-box h4 {
+    font-family: 'Oxygen', sans-serif;
+}
+
+form h4 + div + div + div + div > div.input-box input.radio {
+  height: 1.3rem;
+}
+
+label {
+    cursor: pointer;
+}
+
+label > span {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+label > span > i.fa-cc-visa, label > span > .fa-cc-paypal {
+  font-size: 1.5rem;
+  margin-right: 0.25rem;
+  cursor: pointer;
+}
+
+form h4 + div + div + div + div + div div.input-box, form h4 + div + div + div + div + div + div > .input-box:first-child {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 0.75rem 0;
+    height: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+}
+
+form h4 + div + div + div + div + div div.input-box i, form h4 + div + div + div + div + div + div > .input-box:first-child i {
+    background: rgb(212, 216, 216);
+    width: 8%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+form h4 + div + div + div + div + div div.input-box input, form h4 + div + div + div + div + div + div > .input-box:first-child input {
+    height: 88%;
+    width: 92%;
+    padding: 0 0.5rem;
+    background: inherit;
+    border: none;
+    outline: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+form h4 + div + div + div + div + div + div > .input-box:first-child + div {
+    margin: 1rem 0;
+    height: 2rem;
+}
+
+form h4 + div + div + div + div + div + div > .input-box:first-child + div select {
+    height: 100%;
+    width: 6rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+form h4 + div + div + div + div + div + div + div {
+    height: 2rem;
+}
+
+form h4 + div + div + div + div + div + div + div button {
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+form h4 + div + div + div + div + div + div + div button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width:450px) {
+    form h4 + div div.input-box i, form h4 + div + div div.input-box i, form h4 + div + div + div + div + div div.input-box i, form h4 + div + div + div + div + div + div > .input-box:first-child i {
+        width: 12.5%;
+    }
+    
+    form h4 + div div.input-box input, form h4 + div + div div.input-box input, form h4 + div + div + div + div + div div.input-box input, form h4 + div + div + div + div + div + div > .input-box:first-child input {
+        width: 87.5%;
+    }
+}
