@@ -108,12 +108,10 @@ div.edu-item .deg {
 
     div.topic {
         font-size: 0.75rem;
-        background: pink;
         overflow-x: auto;
     }
 
     .certs ul {
-        background: pink;
         padding: 0;
         margin: 0;
     }
