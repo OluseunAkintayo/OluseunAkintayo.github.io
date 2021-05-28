@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZuriTraining: JS Task</title>
+    <style>
+        body, button {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
 </head>
 <body>
+    <div class="checkYu">
+        <h3>Check Yu-Gi-Oh</h3>
+        <form id="myForm">
+            <input type="text" id="inputText">
+            <button>Check</button>
+        </form>
+        <span id="result"></span>
+    </div>
+    <hr>
+    <div class="temp">
+        <h3>Temperature converter</h3>
+        <form id="form-temp">
+            <input type="text" id="temp" placeholder="Enter Value" />
+            <button>Convert</button>
+        </form>
+        <div id="res"></div>
+    </div> 
     <script src="./checkYuGiOh.js"></script>
     <script src="./convertFahrToCelsius.js"></script>
 </body>

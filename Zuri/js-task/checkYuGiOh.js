@@ -1,15 +1,20 @@
 // Array Creation
 
+let result = document.getElementById("result");
+let myForm = document.getElementById("myForm");
+let inputText = document.getElementById("inputText");
+
 let checkYuGiOh = (num) => {
     if (num instanceof Object || Array.isArray(num)) {
-        console.error(`invalid parameter: "${JSON.stringify(num)}"`);
+        result.innerText = `invalid parameter: "${JSON.stringify(num)}"`;
     } else if (isNaN(Number(num))) {
-        console.error(`invalid parameter: "${num}"`);
+        result.innerText = `invalid parameter: "${num}"`;
     } else {
         let arria = [];
         for (let i=1; i<=num; i++) {
-        arria.push(i);
+            arria.push(i);
         }
+        console.log(arria);
         let newArray = arria.map(arr => {
             if(arr % 2 === 0 && arr % 3 === 0 && arr % 5 === 0) {
                 return "yu-gi-oh";
@@ -28,12 +33,15 @@ let checkYuGiOh = (num) => {
             }
             return arr;
         })
-        return newArray;
+        result.innerText = `[${newArray}]`;
+        console.log(newArray);
     }
 }
 
-console.log(checkYuGiOh(30)); // number
-checkYuGiOh("10"); // string converted to a number
-checkYuGiOh("thingy from the other side"); // string not converted to a number
-checkYuGiOh([30, "rex"]); // array
-checkYuGiOh({id: 34}); // object
+
+
+myForm.onsubmit = (e) => {
+    e.preventDefault();
+    console.log("submission attempted");
+    checkYuGiOh(inputText.value);
+}
